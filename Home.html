@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Counseling Website</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <Style>
+        .carousel-item:hover {
+            background-color: #f9f9f9;};
+            .text-stroke {
+  color: white;
+  text-shadow: 
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__slideInLeft {
+  --animate-delay: 0.5s;
+  animation-delay: var(--animate-delay);
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate__slideInRight {
+  --animate-delay: 0.5s;
+  animation-delay: var(--animate-delay);
+  animation-name: slideInRight;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slideInTop {
+  animation-name: slideInTop;
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+    </Style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Counseling Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Career Cuide.html">Career Guidance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Course.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Universities.html">Universities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactUs.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid text-stroke animate__animated slideInTop" style="background-image: url('./Assets/young-woman-working-laptop-isolated-white-background-removebg-preview.png'); background-repeat: no-repeat; background-position: right; height: 50vh;">
+
+       
+        <div class="container  animate__animated animate__slideInLeft">
+            <h1 class="display-4">Get Expert Career Guidance and Course Selection Advice for Your Future</h1>
+            <p class="lead " style="font-size: 1.2rem; font-family: Arial, sans-serif; line-height: 1.5; color: #333;">
+                Our counseling services offer personalized guidance, expert advice, and access to top universities and
+                courses.</p>
+
+            <a class="btn btn-primary btn-lg" href="./Career Cuide.html" role="button">Find Your Perfect Career Path Now</a>
+        </div>
+    </div>
+
+
+    <!-- Services section -->
+    <div class="container animate__animated animate__slideInRight ">
+        <div class="row">
+            <div class="col-md-4 animate__slideInRight">
+                <img src="./Assets/html-css-collage-concept-with-person.jpg" alt="Career Guidance Icon" height="300px"
+                    width="350px">
+                <h3>Career Guidance</h3>
+                <p>We provide personalized career guidance based on your skills and interests.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./Assets/course.jpg" alt="Course Selection Icon" height="300px" width="350px">
+                <h3>Course Selection Advice</h3>
+                <p>We offer expert advice on selecting the right courses for your career goals.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./Assets/map-wood-classy-world-wide-black.jpg" alt="University Selection Icon" height="300px"
+                    width="350px">
+                <h3>University Selection Advice</h3>
+                <p>We help you choose the best university for your career aspirations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials section -->
+    <div class="container mx-auto text-center">
+        <h2>What Our Clients Say</h2>
+        <div class="container">
+            <div class="row">
+                <div class="carousel-item active my-3"
+                    style="width: 32%;  background: linear-gradient(to bottom,white, rgb(90, 90, 216));"
+                    onmouseover="this.style.transform='scale(1.1)'; this.style.transition='transform 0.3s';"
+                    onmouseout="this.style.transform='scale(1)';"
+                    onmouseover="this.style.background='linear-gradient(to bottom,white,orange)';"
+                    onmouseout="this.style.background='linear-gradient(to bottom, white, rgb(90, 90, 216))';"
+                    >
+                    <p style="padding: 20px;">""I was lost after completing my 12th grade, but the counseling services
+                        provided by this website
+                        were truly life-changing for me. The counselors helped me identify my skills and interests and
+                        provided personalized guidance on career options that aligned with my strengths. They also
+                        helped me explore different educational pathways and select the best courses that would pave the
+                        way for my career aspirations. With their support, I was able to gain a clear sense of direction
+                        and purpose, and I'm now on my way to pursuing my dream career. I am truly grateful to the
+                        counselors and highly recommend this website to anyone who needs guidance on their career
+                        path.""</p>
+                    <p class="font-weight-bold ">- John Doe, University of XYZ</p>
+                </div>
+                <div class="carousel-item active mx-2 my-3"
+                    style="width: 32%; background: linear-gradient(to bottom, white, rgb(90, 90, 216)); transition: background 0.3s;"
+                    onmouseover="this.style.transform='scale(1.1)'; this.style.transition='transform 0.3s';"
+                    onmouseout="this.style.transform='scale(1)';" > <p
+                    style="padding: 20px;">""I was really struggling to find my place in the job market, but the career
+                    coaching I received
+                    from this website completely transformed my outlook. My coach helped me identify my strengths
+                    and passions, and then guided me towards industries and positions that would be a good fit.
+                    Thanks to their help, I was able to land a job in my dream field and I am now thriving in my
+                    career. I would recommend this website to anyone who is feeling stuck or unsure about their
+                    professional future." - Sarah K., Chicago, IL"</p>
+                    <p class="font-weight-bold  "> - Sarah K., Chicago, IL</p>
+                </div>
+                <div class="carousel-item active my-3 "
+                    style="width: 32%;  background: linear-gradient(to bottom,white, rgb(90, 90, 216));"
+                    onmouseover="this.style.transform='scale(1.1)'; this.style.transition='transform 0.3s'";"
+                    onmouseout="this.style.transform='scale(1)'"; ">
+                    <p style="padding: 20px;">""I had always wanted to start my own business, but I didn't know where to
+                        begin. The
+                        entrepreneurship resources on this website were incredibly valuable in helping me take my first
+                        steps. From creating a business plan to securing funding to hiring employees, the guides and
+                        articles provided me with all the information and support I needed to get my company off the
+                        ground. I'm now the proud founder of a successful business, and I couldn't have done it without
+                        this website." "</p>
+                    <p class="font-weight-bold ">- Emily M., Boston, MA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer  text-light" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>We are a team of expert counselors who are passionate about helping students achieve their career
+                        goals.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown USA</li>
+                        <li><i class="fas fa-phone"></i> 555-555-5555</li>
+                        <li><i class="fas fa-envelope"></i> info@counselingwebsite.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect With Us</h4>
+                    <ul class="list-unstyled" ">
+                <li><a style=" color: white;" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a style="color: white;" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a style="color: white;" href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center">&copy; 2023 Counseling Website. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

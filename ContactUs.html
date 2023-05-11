@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        font-size: 3rem;
+      }
+      
+      .form-control:focus {
+        box-shadow: none;
+        border-color: #CCE5FF;
+      }
+      
+      .form-control::placeholder {
+        color: #ccc;
+        font-size: 0.9rem;
+      }
+      
+      .input-group-text {
+        background-color: #fff;
+        border-color: #fff;
+        font-size: 1.2rem;
+        color: #6c757d;
+      }
+      
+      .input-group-text i {
+        margin-right: 5px;
+      }
+      
+      .contact-form button[type="submit"] {
+        background-color: #005DFF;
+        border: none;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 10px 30px;
+        margin-top: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .contact-form button[type="submit"]:hover {
+        background-color: #0052CC;
+      }
+      
+      .alert {
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: none;
+      }
+      
+      .alert-danger {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+      }
+      
+      .alert-success {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+      }
+      
+      .animated-form {
+        animation: slide-up 0.5s ease;
+      }
+      
+      @keyframes slide-up {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Counseling Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Career Cuide.html">Career Guidance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Course.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Universities.html">Universities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactUs.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid bg-dark text-light py-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <h2>Contact Us</h2>
+              <p>We'd love to hear from you!</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="bg-secondary text-light py-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <p>&copy; 2023 Career Counseling Website. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+      <script>
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+        });
+        $('.animate').waypoint(function() {
+          $(this).addClass('animate__animated animate__fadeInUp');
+        }, {
+          offset: '75%'
+        });
+      </script>
+  </body>
+</html>      
